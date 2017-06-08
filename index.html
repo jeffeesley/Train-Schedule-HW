@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedule</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<div class = "container">
+<form id = "train-input-form">
+	<label for= "train-input"></label>
+	<p><input type = "text" id = "train-name">Train Name</p>
+	<p><input type = "text" id = "destination">Destination</p>
+	<p><input type = "text" id = "frequency">Frequency</p>
+	<p><input type = "text" id = "first-train-time">First Train Time</p>
+	<input id = "add-train" type = "submit" value = "Add Train">
+	<table class="table" id = "trainTable">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody id = "trainTable">
+     
+    </tbody>
+  </table>
+</div>
+
+<script src="assets/logic.js"></script>
+	
+</body>
+</html>
